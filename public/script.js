@@ -3,7 +3,7 @@ function get() {
     let req = new XMLHttpRequest();
 
     // XMLHttpRequest.open(method: string, url: string)
-    req.open('GET', 'http://localhost:3000/all');
+    req.open('GET', '/all');
 
     req.onreadystatechange = () => {
         // readyState of 4 - DONE (operation is complete).
@@ -29,7 +29,7 @@ function func(){
     let req = new XMLHttpRequest();
 
     // XMLHttpRequest.open(method: string, url: string)
-    req.open('GET', 'http://localhost:3000/meet');
+    req.open('GET', '/meet');
 
     req.onreadystatechange = () => {
         // readyState of 4 - DONE (operation is complete).
@@ -62,7 +62,7 @@ function func(){
 function getTable(){
     console.log("rewq req")
     let req = new XMLHttpRequest();
-    req.open('GET', 'http://localhost:3000/meetings');
+    req.open('GET', '/meetings');
     req.send();
 }
 
