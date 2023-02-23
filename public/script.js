@@ -47,7 +47,7 @@ function func(){
                 result += `
                     <tr>
                     <td>${a[key][0]}</td>
-                    <td>${key}</td>
+                    <td class="text-truncate" style="max-width: 150px; word-wrap: break-word;">${key}</td>
                     <td>${a[key][1]}</td>
                     </tr>
                     `

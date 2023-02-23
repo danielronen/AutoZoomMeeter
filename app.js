@@ -12,7 +12,7 @@ app.use(express.static('public'));
 
 app.get("/all", (req, res) => {
     var dataToSend;
-    const python = spawn('python', ['myScript.py']);
+    const python = spawn('python3', ['myScript.py']);
     python.stdout.on('data', function (data) {
      console.log('Pipe data from python script ...');
      dataToSend = data.toString();
@@ -30,7 +30,7 @@ app.get("/meetings", (req, res) =>{
 
 app.get("/meet", (req, res) => {
     var dataToSend;
-    const python = spawn('python', ['example.py']);
+    const python = spawn('python3', ['example.py']);
     python.stdout.on('data', function (data) {
      console.log('Pipe data from python script ...');
      dataToSend = data.toString();
