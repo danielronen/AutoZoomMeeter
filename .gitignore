@@ -12,6 +12,6 @@ lerna-debug.log*
 node_modules/
 jspm_packages/
 # dotenv environment variable files
-.env
+*.env
 
-.out
+*.out
