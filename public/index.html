@@ -11,7 +11,7 @@
         body {
             background-color: rgb(155, 209, 211);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 17px;
+            min-font-size: 14px;
         }
         
         #g {
@@ -30,7 +30,7 @@
 <body class="text-primary">
     <div class="container" style="text-align:center; margin:auto;">
         <h1 class="text-center" style="display: inline;"><b>Zoom <p class="text-center" style="display: inline;" onclick="myFunction()">G</p>enerator</b></h1>
-        <div  class="container bg-white border rounded border-primary m-auto mt-5 border-opacity-75 border-3 " style="width: 70%; height: 75%;">
+        <div  class="container bg-white border rounded border-primary m-auto my-5 border-opacity-75 border-3 " style="width: 70%; height: 75%;">
             <div class="container mt-5 px-2 ">
                 <p><b>קישור לפתיחה :</b></p>
                 <p class="text-truncate" style="word-wrap: break-word;"><a class="text-primary" target="_blank" id="link"></a></p>  
@@ -40,9 +40,9 @@
                 <p id="email" class="text-truncate" style="word-wrap: break-word;"></p>  
             </div>
             
-            <button onclick="get()" class="btn btn-success my-5"><b>GENERATE</b></button>
+            <button onclick="get()" class="btn btn-sm rounded  btn-success my-5"><b>GENERATE</b></button>
             
-            <div class="container mt-2" style="width: 85%;">
+            <div class="container my-2" style="width: 85%;">
                 <h5 ><b>הסבר כניסה:</b></h5>
                 <p class="text-end"><br> 1) יש ללחוץ על הכפתור "GENERATE"<br>
                     2) להיכנס לקישור שקיבלתם לפתיחת הפגישה<br>
@@ -52,9 +52,9 @@
                 </p>
             </div>
         </div>
-        <button onclick="func()" class="btn btn-success my-5" id="g"><b>Get</b></button>
+        <button onclick="func()" class="btn-sm btn-primary my-5" id="g"><b>Get</b></button>
 	<div class="row" style="width:'85%';">
-	    <table id="shiftsTable" border="2" class="table table-striped" style="witdh:'85%'"></table>
+	    <table id="shiftsTable" border="3" class="table table-striped border border-primary" style="witdh:'85%'"></table>
         </div>
 	</div>
     </div>

@@ -36,13 +36,13 @@ function func(){
         if (req.readyState === 4) {
             // req.response - is the data that returns from the address
             // JSON.parse() - convert to array. 
-            console.log(req.response)
+            //console.log(req.response)
             let arr = req.response;
             let a = JSON.parse(JSON.parse(arr));
-            console.log(a)
+            //console.log(a)
             
             let result = '';
-            result += `<th>User</th><th>Live</th><th>Host Key</th>`
+            result += `<th>Live</th><th>User</th><th>Host Key</th>`
             for (var key in a) {
                 result += `
                     <tr>
