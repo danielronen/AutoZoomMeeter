@@ -44,8 +44,8 @@ function func(){
             let result = '';
             result += `<th>Live</th><th>User</th><th>Host Key</th>`
             for (var key in a) {
-                result += `
-                    <tr>
+                a[key][0] >= 2 ? result += `<tr class="bg-danger">` : result += `<tr>`
+		result += `
                     <td>${a[key][0]}</td>
                     <td class="text-truncate" style="max-width: 150px; word-wrap: break-word;">${key}</td>
                     <td>${a[key][1]}</td>
