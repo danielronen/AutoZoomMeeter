@@ -103,11 +103,11 @@ def getMeetings():
 
 mit = getMeetings()
 my_dict = {
-  "bensiboni10@gmail.com": [0, BS_HOST],
-  "support@ecomschool.co.il": [0, SU_HOST],
   "inna@ecomschool.co.il": [0, IN_HOST],
   "digital@ecomschool.co.il": [0, DIG_HOST],
+  "bensiboni10@gmail.com": [0, BS_HOST],
   "HR@ecomschool.co.il": [0, HR_HOST],
+  "support@ecomschool.co.il": [0, SU_HOST],
   "simon@ecomschool.co.il": [0, "HostKey"],
   "emil@ecomschool.co.il": [0, "HostKey"],
   "cofounder@ecomschool.co.il": [0, "HostKey"]
