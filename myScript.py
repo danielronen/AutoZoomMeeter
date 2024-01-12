@@ -117,10 +117,9 @@ for i in range(len(mit)):
   my_dict[mit[i]["email"]][0] += 1
 
 for key in my_dict:
-  if my_dict[key][0] < 2:
-    if my_dict[key][1] != "HostKey":
-      createMeeting(key, my_dict[key][1])
-      break
+  if my_dict[key][0] < 2 && my_dict[key][1] != "HostKey":
+    createMeeting(key, my_dict[key][1])
+    break
 
 # for key in my_dict:
 #   print(key)
